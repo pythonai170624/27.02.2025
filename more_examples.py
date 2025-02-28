@@ -236,6 +236,7 @@ def complex_memory_operations():
             'set': set(range(100))
         })
 
+
     final_snapshot = tracemalloc.take_snapshot()
     stats = final_snapshot.compare_to(initial_snapshot, 'lineno')
 
